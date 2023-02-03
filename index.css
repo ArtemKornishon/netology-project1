@@ -91,10 +91,66 @@
 }
 
 .page {
-    width: 1170px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     margin: 64px auto;
+}
+
+.trends {
+    max-width: 100%;
+    margin-top: 3.81%;
+}
+
+.trends__cards-wrapper {
+    margin-top: 1.72em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.trends__card {
+min-height: 230px;
+max-width: 24.69%;
+min-width: 360px;
+}
+
+
+.trends__card-background-one {
+    background-image: url(../netology-project1/images/trend1.jpg);
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trends__card-background-two {
+    background-image: url(../netology-project1/images/trend2.jpg);
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trends__card-background-three {
+    background-image: url(../netology-project1/images/trend3.jpg);
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trends__card-background-four {
+    background-image: url(../netology-project1/images/trend4.jpg);
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trends_text {
+    border: solid 3px rgba(181, 159, 91, 0.6);
+    width: 100%;
 }
 
 .main_content {
