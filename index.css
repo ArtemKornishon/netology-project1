@@ -102,6 +102,26 @@
     margin-top: 3.81%;
 }
 
+.trends_title {
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.trends_title::after{
+    content:"";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    width: 66px;
+    height: 3px;
+    background:#b59f5b;
+  }
+
 .trends__cards-wrapper {
     margin-top: 1.72em;
     display: flex;
@@ -111,10 +131,12 @@
 
 .trends__card {
 min-height: 230px;
-max-width: 24.69%;
-min-width: 360px;
+width: calc(25% - 4px);
+z-index: -999;
+display: flex;
+align-items: flex-end;
+padding: 7.7% 20px 20px;
 }
-
 
 .trends__card-background-one {
     background-image: url(../netology-project1/images/trend1.jpg);
@@ -148,9 +170,30 @@ min-width: 360px;
     background-size: cover;
 }
 
+.trends__card::after {
+    content: "";
+    z-index: -1;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .trends_text {
     border: solid 3px rgba(181, 159, 91, 0.6);
     width: 100%;
+    z-index: 1;
+    padding: 40px 40px 35px 30px;
+}
+
+.trends__card-link {
+    font-family: open-sans-b;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .main_content {
