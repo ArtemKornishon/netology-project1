@@ -95,6 +95,23 @@
     margin: 64px auto;
 }
 
+.popup {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.visible {
+
+}
+
 .trends {
     max-width: 100%;
     margin-top: 3.81%;
