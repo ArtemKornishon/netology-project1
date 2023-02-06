@@ -201,9 +201,12 @@ padding: 7.7% 20px 20px;
     flex-direction: column;
 }
 
+.news__wrapper {
+    display: flex;
+}
+
 .news_card {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 60px;
 }
 
@@ -489,6 +492,48 @@ padding: 7.7% 20px 20px;
 
 .shop__card-img_wrp {
     max-width: 300px;
+}
+
+.shop__card-title {
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.shop__card-info {
+    font-family: open-sans-r, sans-serif;
+    font-size: 15px;
+}
+
+.shop__card-link {
+    font-family: open-sans-b;
+    text-decoration: none;
+    color: #b59f5b;
+    font-size: 15px;
+}
+
+.shop__card-old_price {
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.shop__card-new_price {
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.shop__card-button {
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#ffffff;
+    display: inline-block;
+    background: #b59f5b;
+    padding: 20px 30px;
+    text-decoration: none
 }
 
 .shop__card-text_wrp {
