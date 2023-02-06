@@ -92,8 +92,6 @@
 
 .page {
     max-width: 1170px;
-    display: flex;
-    justify-content: space-between;
     margin: 64px auto;
 }
 
@@ -198,11 +196,16 @@ padding: 7.7% 20px 20px;
 
 .main_content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
-.news__wrapper {
+.main__wrapper {
     display: flex;
+}
+
+.news__section {
+    display: flex;
+    flex-direction: column;
 }
 
 .news_card {
@@ -476,6 +479,7 @@ padding: 7.7% 20px 20px;
 
 .shop {
     max-width: 1170px;
+    margin-top: 64px;
 }
 
 .shop__wrapper {
@@ -487,7 +491,8 @@ padding: 7.7% 20px 20px;
 .shop__card {
     display: flex;
     flex-direction: column;
-    width: 29.65%;
+    align-items: center;
+    width: 29.5%;
 }
 
 .shop__card-img_wrp {
@@ -498,11 +503,18 @@ padding: 7.7% 20px 20px;
     font-family: open-sans-b, sans-serif;
     text-transform: uppercase;
     font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.shop__card-text {
+    margin-bottom: 20px;
 }
 
 .shop__card-info {
     font-family: open-sans-r, sans-serif;
     font-size: 15px;
+    line-height: 1.46;
+    font-weight: normal;
 }
 
 .shop__card-link {
@@ -521,8 +533,14 @@ padding: 7.7% 20px 20px;
 
 .shop__card-new_price {
     font-family: open-sans-b, sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.shop__price-wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .shop__card-button {
