@@ -71,39 +71,41 @@
     <div class="page">
         <main class="main_content">
             <div class="popup visible">
-                <div class="popup__feedback">
-                    <h3 class="section__title"></h3>
-                    <form class="feedback__forms">
-                        <div class="feedback__form">
-                            <label class="form-label" for="question-select-id">Как часто вы заходите на сайт?</label>
-                            <select class="question-select" for="question-select-id">
-								<option selected="">Почти каждый день</option>
-								<option>Почти каждую неделю</option>
-								<option>Почти каждый месяц</option>
-							</select>
-                        </div>
-                        <div class="feedback__form">
-                            <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
-                            <label class="radio-group">
-								<input type="radio" class="radio" name="radio-group" checked="">
-								<span class="radio-group-text">Да</span>
-							</label>
-                            <label class="radio-group">
-								<input type="radio" class="radio" name="radio-group">
-								<span class="radio-group-text">Нет</span>
-							</label>
-                        </div>
-                        <div class="feedback__form">
-                            <label class="form-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?
-								<textarea class="form-textarea">Может, больше рецептов?</textarea>
-							</label>
-                        </div>
-                        <button class="popup-button" type="button">Отправить</button>
-                    </form>
+                <div class="pupup__wrapper">
+                    <div class="popup__feedback">
+                        <h3 class="section__title"></h3>
+                        <form class="feedback__forms">
+                            <div class="feedback__form">
+                                <label class="form-label" for="question-select-id">Как часто вы заходите на сайт?</label>
+                                <select class="question__select" for="question__select-id">
+                                    <option selected="">Почти каждый день</option>
+                                    <option>Почти каждую неделю</option>
+                                    <option>Почти каждый месяц</option>
+                                </select>
+                            </div>
+                            <div class="feedback__form">
+                                <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+                                <label class="radio-group">
+                                    <input type="radio" class="radio" name="radio-group" checked="">
+                                    <span class="radio-group-text">Да</span>
+                                </label>
+                                <label class="radio-group">
+                                    <input type="radio" class="radio" name="radio-group">
+                                    <span class="radio-group-text">Нет</span>
+                                </label>
+                            </div>
+                            <div class="feedback__form">
+                                <label class="form-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+                                    <textarea class="form-textarea">Может, больше рецептов?</textarea>
+                                </label>
+                            </div>
+                            <button class="popup-button" type="button">Отправить</button>
+                        </form>
+                    </div>
+                    <button class="popup__close-btn">
+                        <img class="popup-close-img" src="svg/form-x.svg" alt="Кнопка закрытия окна">
+                    </button>
                 </div>
-                <button class="popup__close-btn">
-                    <img class="popup-close-img" src="svg/form-x.svg" alt="Кнопка закрытия окна">
-                </button>
             </div>
             <div class="news__section">
                 <article class="news_card">
