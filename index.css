@@ -96,7 +96,7 @@
 }
 
 .visible {
-
+display: none;
 }
 
 .popup {
@@ -114,7 +114,7 @@
 
 .popup__wrapper {
     position: relative;
-    width: 30%;
+    width: 23.45%;
     max-width: 700px;
     padding: 30px 20px;
     background-color: white;
@@ -122,10 +122,15 @@
 
 .popup__feedback {
     font-size: 12px;
+    margin-top: 24px;
+}
+
+.feedback__forms {
+    margin-top: 30px;
 }
 
 .feedback__form {
-    margin-bottom: 20px;
+    margin-bottom: 34px;
 }
 
 .question__select {
@@ -138,8 +143,85 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     border: none;
-    background: #f3f2f2 url(../svg/form-arrows.svg) no-repeat right 10px center;
+    background: #f3f2f2 url(./svg/form-arrows.svg) no-repeat right 10px center;
     background-size: 8px;
+}
+
+.question-select:focus,
+.question-select:hover {
+	outline: 1px solid #b59f5b;
+	outline-offset: -1px;
+}
+.form-hint {
+	display: block;
+	margin-bottom: 10px;
+}
+.radio-group {
+	display: inline-block;
+}
+.radio-group:nth-of-type(n+2) {
+	margin-left: 5px;
+}
+.radio-group-text::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 15px;
+	height: 15px;
+	margin-right: 3px;
+	background: url("./svg/form-empty-circle.svg") no-repeat center center;
+	background-size: 100%;
+}
+.radio {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+}
+.radio:checked ~ .radio-group-text::before {
+	background-image: url("./svg/form-circle.svg");
+}
+.form-textarea {
+	width: 100%;
+	min-height: 133px;
+	resize: none;
+	padding: 10px;
+	margin-top: 10px;
+	font: inherit;
+	color: grey;
+	background-color: #f3f2f2;
+	border: none;
+}
+.form-textarea:hover,
+.form-textarea:focus {
+	outline: 1px solid #b59f5b;
+	outline-offset: -1px;
+}
+.popup-button {
+	width: 100%;
+	padding: 15px;
+	font-size: inherit;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	background-color: #b59f5b;
+	border: none;
+    margin-bottom: 24px;
+}
+.popup-button:focus,
+.popup-button:hover {
+	outline: 2px solid #b59f5b;
+	outline-offset: 4px;
+	color: black;
+}
+.popup__close-btn {
+	position: absolute;
+	top: -20px;
+	right: 0;
+	width: 15px;
+	height: 15px;
+	background-color: transparent;
+	border: none;
 }
 
 .trends {
