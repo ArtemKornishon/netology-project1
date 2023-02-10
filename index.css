@@ -90,13 +90,60 @@
     right: 0;
 }
 
+.burger__menu {
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+	.burger__menu {
+		display: block;
+		width: 1.25em;
+		height: 1em;  
+		border: none;
+		padding: 0;
+		background-color: transparent;
+		font-size: 20px;
+		position: relative;
+		text-indent: -9999px;
+		cursor: pointer;
+	}
+	.burger__menu:hover,
+	.burger__menu:focus {
+	border: none;
+	outline: 1px solid #b59f5b;
+	outline-offset: 10px;
+}
+	.burger__menu:before, .menu-burger:after {
+		content:"";
+		width: 100%;
+		height: 20%;
+		border-radius: 5px;
+		background-color: #ffffff;  
+		position: absolute;
+		left: 0;
+	}
+	.burger__menu:before {
+		top: 0;
+	}
+	.burger__menu:after {
+		bottom: 0;
+	}
+	.burger__menu-label {
+		width: 100%;
+		height: 20%;
+		margin-top: -0.1em;  
+		border-radius: 5px;
+		background-color: #ffffff;  
+		position: absolute;
+		left: 0;
+		top: 50%;
+	}
+}
+
+
 .page {
     max-width: 1170px;
     margin: 64px auto;
-}
-
-.visible {
-display: none;
 }
 
 .popup {
@@ -110,6 +157,7 @@ display: none;
     right: 0;
     left: 0;
     bottom: 0;
+    display: none;
 }
 
 .popup__wrapper {
