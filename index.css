@@ -90,6 +90,11 @@
     right: 0;
 }
 
+.header_logo-pic-mobile {
+    display: none;
+
+}
+
 .burger__menu {
     display: none;
 }
@@ -886,3 +891,114 @@ padding: 7.7% 20px 20px;
         max-width: 90.8%;
     }
 }
+
+@media screen and (max-width: 640px) {
+
+    .header_logo-pic {
+        display: none;
+    }
+	
+	.header_logo-pic-mobile {
+        display: block;
+        text-align: center;
+        margin: 175px auto 0 auto;
+        width: 180px;
+    }
+
+    .header {
+        min-height: 640px;
+        background-image: url(./images/banner-mobile.jpg)
+    }
+
+    .header_title {
+        max-width: 290px;
+        font-size: 26px;
+        margin: 45px auto 0 auto;
+    }
+
+    .header_container {
+        width: 94.7%;
+        padding-top: 32px;
+    }
+
+    .trends__card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 3px;
+    }
+
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 91%;
+        margin: 0 auto;
+    }
+
+    .section_title {
+        font-size: 16px;
+    }
+
+    .trends {
+        margin-top: 40px;
+    }
+
+    .trends__card-link {
+        font-size: 16px;
+    }
+
+    .trends__card-title {
+        margin-top: 13.5px;
+    }
+
+    .trends_text {
+        padding: 29px 15px 29px 15px;
+    }
+
+    .page {
+        margin: 40px auto;
+    }
+
+    .news__section {
+        margin: 0 auto;
+        max-width: 328px;
+    }
+
+    .news_card {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .news_pic {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .news_card::after {
+        content: "";
+        display: block;
+        margin-top: 21px;
+        margin-bottom: 35px;
+        width: 100%;
+        height: 3px;
+        background-color: rgba(122, 122, 122, 0.2);
+    }
+    
+    .news_info {
+        margin-top: 16px;
+    }
+
+    .title_link {
+        font-size: 16px;
+    }
+
+    .news-text-meta {
+        margin-top: 24px;
+        margin-bottom: 21px;
+    }
+
+    .shop__wrapper {
+        flex-direction: column;
+    }
+}
+
