@@ -758,6 +758,10 @@ padding: 7.7% 20px 20px;
     display: flex;
 }
 
+.footer_links {
+    margin-right: 30px;
+}
+
 .footer_link {
     display: block;
     width:20px;
@@ -766,7 +770,10 @@ padding: 7.7% 20px 20px;
     background-size: 16px;
     background-position: center;
     margin: 32px 0;
-    margin-right: 30px;
+}
+
+.footer_links:nth-child(3) {
+    margin-right: 0px;
 }
 
 .footer_link_dribbble {
@@ -816,6 +823,15 @@ padding: 7.7% 20px 20px;
         margin: 105px auto 0 auto;
         font-size: 40px;
         line-height: 1.375;
+    }
+
+    .popup__wrapper {
+        width: 55%;
+    }
+
+    .popup__close-btn {
+        top: -33px;
+        width: 25px;
     }
 
     .news_card {
@@ -956,7 +972,7 @@ padding: 7.7% 20px 20px;
     }
 
     .page {
-        margin: 40px auto;
+        margin: 40px auto 17px;
     }
 
     .news__section {
@@ -999,6 +1015,34 @@ padding: 7.7% 20px 20px;
 
     .shop__wrapper {
         flex-direction: column;
+    }
+
+    .aside_wrapper {
+        margin: 0 auto;
+        width: 320px;
+    }
+
+    .shop {
+        width: 91.5%;
+        margin: 44px auto 0;
+    }
+
+    .shop__card {
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .footer_wrapper {
+        width: 91.5%;
+    }
+
+    .popup__wrapper {
+        width: 90%;
+    }
+
+    .popup__close-btn {
+        top: -33px;
+        width: 25px;
     }
 }
 
